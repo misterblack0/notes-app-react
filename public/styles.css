@@ -12,7 +12,12 @@ body {
   font-size: 1.6rem;
   background: #eee;
   width: 100wh;
-  height: 90vh;
+  height: 98vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -20,13 +25,6 @@ header {
   background-color: blanchedalmond;
 }
 
-footer {
-  text-align: center;
-}
-
-footer p {
-  color: #ccc;
-}
 
 .note {
   background: #fff;
@@ -39,15 +37,9 @@ footer p {
 }
 
 .note button {
-  position: relative;
-  background: transparent;
   display: flex;
   justify-content: flex-end;
-
   color: #ffc93c;
-  border: none;
-  cursor: pointer;
-  outline: none;
 }
 
 form.create-note {
@@ -86,12 +78,13 @@ form.create-note button {
 
 .note-header {
   width: 100%;
-  height: 20%;
+  height: 5rem;
   display: flex;
   flex: 0 1;
   background-color: #ffc93c;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .note-header h1 {
@@ -101,6 +94,7 @@ form.create-note button {
 }
 
 .note-body p {
+  flex: 0 1;
   font-size: 1.6rem;
   margin-bottom: 10px;
   white-space: pre-wrap;
@@ -115,10 +109,9 @@ form.create-note button {
 }
 
 @media (min-width: 800px) {
-
-.notes-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 0.1fr));
-  grid-gap: 2.5rem;
-}
+  .notes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 0.1fr));
+    grid-gap: 2.5rem;
+  }
 }
