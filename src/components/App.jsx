@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles.css";
 import Header from "./Header";
 import Note from "./Note";
 import CreateNote from "./CreateNote";
