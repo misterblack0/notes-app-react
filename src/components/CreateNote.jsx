@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import Fab from "@material-ui/core/Fab";
 import AddIcon from "@material-ui/icons/Add";
 
-function CreateNote(props) {
+const CreateNote = (props) => {
   const [note, setNote] = useState({
     title: "",
     content: "",
   });
 
-  function handleChange(event) {
+  const handleChange = (event) => {
     const { name, value } = event.target;
 
     setNote((prevNote) => {
@@ -17,16 +17,16 @@ function CreateNote(props) {
         [name]: value,
       };
     });
-  }
+  };
 
-  function submitNote(event) {
+  const submitNote = (event) => {
     props.onAdd(note);
     setNote({
       title: "",
       content: "",
     });
     event.preventDefault();
-  }
+  };
 
   return (
     <div>
@@ -50,6 +50,6 @@ function CreateNote(props) {
       </form>
     </div>
   );
-}
+};
 
 export default CreateNote;

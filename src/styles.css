@@ -25,22 +25,6 @@ header {
   background-color: blanchedalmond;
 }
 
-.note {
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px #ccc;
-  overflow: hidden;
-  min-width: 240px;
-  display: flex;
-  flex-direction: column;
-}
-
-.note button {
-  display: flex;
-  justify-content: flex-end;
-  color: #ffc93c;
-}
-
 form.create-note {
   position: relative;
   width: 480px;
@@ -75,6 +59,16 @@ form.create-note button {
   outline: none;
 }
 
+.note {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+  overflow: hidden;
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+}
+
 .note-header {
   width: 100%;
   min-height: 4.5rem;
@@ -99,6 +93,12 @@ form.create-note button {
   white-space: pre-wrap;
   word-wrap: break-word;
   padding: 1rem;
+}
+
+.note button {
+  display: flex;
+  justify-content: flex-end;
+  color: #ffc93c;
 }
 
 .note-footer {
