@@ -1,9 +1,5 @@
 import React from "react";
 
-const Header = () => (
-  <header>
-    <h1>Notes App</h1>
-  </header>
-);
+const Header = () => <h1 className="heading">Notes App</h1>;
 
 export default Header;

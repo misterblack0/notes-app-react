@@ -20,7 +20,7 @@ body {
   flex-direction: column;
 }
 
-header {
+.heading {
   text-align: center;
   background-color: blanchedalmond;
 }

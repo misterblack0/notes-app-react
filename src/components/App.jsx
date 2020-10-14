@@ -22,10 +22,9 @@ function App() {
   }
 
   return (
-    <div>
+    <>
       <Header />
       <CreateNote onAdd={addNote} />
-
       <div className="notes-container">
         {notes.map((noteItem, token) => {
           return (
@@ -39,7 +38,7 @@ function App() {
           );
         })}
       </div>
-    </div>
+    </>
   );
 }
 

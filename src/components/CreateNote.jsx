@@ -29,7 +29,7 @@ const CreateNote = (props) => {
   };
 
   return (
-    <div>
+    <>
       <form className="create-note">
         <input
           name="title"
@@ -48,7 +48,7 @@ const CreateNote = (props) => {
           <AddIcon fontSize="large" />
         </Fab>
       </form>
-    </div>
+    </>
   );
 };
 
